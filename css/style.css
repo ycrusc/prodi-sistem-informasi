@@ -1,0 +1,299 @@
+/* TEAM 2 UAS WDI
+ * ==============
+ * - Afif Whelly Artissandi (211210058)
+ * - Yohanes Crusc Yunianto Tinitih (211210061)
+ * - Wuri Handayani (211220059)
+ * - Arif Alifudin (211210064)
+ * - Abdurrahman Hanifatullah S. P. (211210075)
+ * 
+ * Copyright 2022 - License: CC BY 4.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 3rem;
+}
+
+#carouselExampleInterval {
+  margin-bottom: 8rem;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-item h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+section {
+  margin-bottom: 8rem;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0;
+  transition: all 300ms ease;
+}
+
+.card:not(.berita) {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card.berita {
+  height: 100%;
+}
+
+.card.berita img {
+  width: 200px;
+  object-fit: cover;
+}
+
+ .hovereffect {
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
+  }
+
+  .hovereffect img {
+    object-fit: cover;
+  }
+  
+  .hovereffect .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
+  }
+  
+  .hovereffect img {
+  display:block;
+  position:relative;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
+  }
+  
+  .hovereffect h2 {
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  font-size:17px;
+  background:rgba(0,0,0,0.6);
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  padding:10px;
+  }
+  
+  .hovereffect a.info {
+  text-decoration:none;
+  display:inline-block;
+  text-transform:uppercase;
+  color:#fff;
+  border:1px solid #fff;
+  background-color:transparent;
+  opacity:0;
+  filter:alpha(opacity=0);
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  margin:50px 0 0;
+  padding:7px 14px;
+  }
+  
+  .hovereffect a.info:hover {
+  box-shadow:0 0 5px #fff;
+  }
+  
+  .hovereffect:hover img {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  }
+  
+  .hovereffect:hover .overlay {
+  opacity:1;
+  filter:alpha(opacity=100);
+  }
+  
+  .hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity:1;
+  filter:alpha(opacity=100);
+  -ms-transform:translatey(0);
+  -webkit-transform:translatey(0);
+  transform:translatey(0);
+  }
+  
+  .hovereffect:hover a.info {
+  -webkit-transition-delay:.2s;
+  transition-delay:.2s;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+
+a {
+  text-decoration: none;
+}
+
+.tanggal-post {
+  float: right;
+  font-size: smaller;
+  color: #bbb;
+}
+
+.img-baseline {
+  vertical-align: baseline;
+}
+
+.img-ml {
+  margin-left: 15px;
+}
+
+.meta {
+  margin-bottom: 1em;
+  color: grey;
+}
+
+.meta a {
+  color: gray;
+}
+
+.meta a:hover {
+  color : rgb(28, 120, 226);
+}
+
+.more a{
+  color : rgb(28, 120, 226);
+  text-align: center;
+  margin: 2em auto;
+  display: block;
+  padding: 0.4em;
+  border: 1px solid rgb(28, 120, 226);
+  border-radius: 0.5em;
+}
+
+.more a:hover{
+  border: 1px solid gray;
+  color : white;
+  background-color: rgb(28, 120, 226);
+  text-align: center;
+}
+
+.bc-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bc-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.accordion-body {
+  color: gray;
+}
+
+.three-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 375px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .carousel-item h1 {
+    text-align: center !important;
+    font-size: 2rem;
+  }
+
+  .card img {
+    width: 100% !important;
+  }
+}
+
+.t-b {
+  top: 87px;
+}
+
+.t-s {
+  top: 87px;
+}
+
+.t-t {
+  top: 120px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom, 
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,1) 75%,
+    rgba(255,255,255,0) 100%
+ );
+}
+
+.accordion {
+  z-index: 0;
+}
+
+.fh {
+  height: 45px;
+}
+
+.farback {
+  z-index: -99;
+}
+
+.pf {
+  height: 200px;
+  width: 160px;
+}
+
+.bt-1 {
+  border-top: 1px solid #ddd !important;
+}
+
+     .jumbotron-image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
